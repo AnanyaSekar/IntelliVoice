@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Conda
+.conda/
+
+# macOS
+.DS_Store
+
+# Environment / secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Generated outputs
+outputs/*
+!outputs/.gitkeep
+
+# Model files
+models/*.pt
+models/*.onnx
+models/*.pth
+models/*.engine
+
+# Local datasets
+dataset/train/
+dataset/val/
+dataset/test/
+dataset/raw/
