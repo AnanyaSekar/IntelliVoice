@@ -32,8 +32,13 @@ models/*.onnx
 models/*.pth
 models/*.engine
 
-# Local datasets
+# Local third-party dataset images and archives (Keep markdown & YAML configs tracked)
+dataset/external/
+dataset/raw/*
+!dataset/raw/*/SOURCE_INFO.md
+dataset/custom/*
+!dataset/custom/README.md
 dataset/train/
 dataset/val/
 dataset/test/
-dataset/raw/
+yolov8n.pt
