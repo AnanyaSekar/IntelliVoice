@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IntelliVoice</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- LANGUAGE SELECTION SCREEN -->
+        <div id="languageScreen">
+
+            <h2>WELCOME TO INTELLIVOICE</h2>
+
+            <p>Please select your preferred language:</p>
+
+            <button class="languageButton" data-language="en">
+                1 - English
+            </button>
+
+            <button class="languageButton" data-language="ta">
+                2 - Tamil
+            </button>
+
+            <button class="languageButton" data-language="hi">
+                3 - Hindi
+            </button>
+
+        </div>
+
+
+        <!-- MAIN ASSISTANT SCREEN -->
+        <div id="assistantScreen" style="display: none;">
+
+            <header>
+
+                <h1>INTELLIVOICE</h1>
+
+                <p>AI Voice Assistant for Navigation</p>
+
+            </header>
+
+
+            <main>
+
+                <!-- CAMERA SECTION -->
+                <div class="camera-box">
+
+                    <div class="camera-container">
+
+                        <video id="camera" autoplay playsinline></video>
+
+                        <canvas id="detectionCanvas"></canvas>
+
+                    </div>
+
+
+                    <div class="camera-placeholder" id="cameraPlaceholder">
+
+                        <span>📷</span>
+
+                        <p>CAMERA</p>
+
+                        <small>Double tap START to activate</small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ASSISTANT STATUS -->
+                <div class="status">
+
+                    <div class="status-item">
+
+                        <span class="dot red"></span>
+
+                        <span>ASSISTANT OFF</span>
+
+                    </div>
+
+
+                    <div class="status-item">
+
+                        <span class="dot red"></span>
+
+                        <span>VOICE OFF</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- START / STOP BUTTON -->
+                <button id="startButton">
+
+                    DOUBLE TAP ANYWHERE TO START
+
+                </button>
+
+
+                <!-- DETECTION INFORMATION -->
+                <div class="info">
+
+                    <div class="info-box">
+
+                        <h3>LAST ALERT</h3>
+
+                        <p id="lastAlert">
+                            Waiting for detection...
+                        </p>
+
+                    </div>
+
+
+                    <div class="info-box">
+
+                        <h3>DETECTED OBJECT</h3>
+
+                        <p id="detectedObject">
+                            None
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
