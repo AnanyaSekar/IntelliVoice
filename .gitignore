@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Conda
+.conda/
+
+# macOS
+.DS_Store
+
+# Environment / secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Generated outputs
+outputs/*
+!outputs/.gitkeep
+
+# Model files
+models/*.pt
+models/*.onnx
+models/*.pth
+models/*.engine
+
+# Local third-party dataset images and archives (Keep markdown & YAML configs tracked)
+dataset/external/
+dataset/raw/*
+!dataset/raw/*/SOURCE_INFO.md
+dataset/custom/*
+!dataset/custom/README.md
+dataset/train/
+dataset/val/
+dataset/test/
+yolov8n.pt

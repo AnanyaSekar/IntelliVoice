@@ -1,0 +1,18 @@
+path: ./dataset
+train: train/images
+val: val/images
+test: test/images
+
+names:
+  0: bus
+  1: car
+  2: motorcycle
+  3: bicycle
+  4: traffic_light
+  5: crosswalk
+  6: person
+  7: pole
+  8: stairs
+  9: pothole
+  10: door
+  11: bench
